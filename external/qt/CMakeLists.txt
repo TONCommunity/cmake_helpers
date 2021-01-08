@@ -89,6 +89,8 @@ else()
         ${qt_loc}/include/QtCore
         ${qt_loc}/include/QtGui
         ${qt_loc}/include/QtWidgets
+        ${qt_loc}/include/QtOpenGL
+        ${qt_loc}/include/QtOpenGLExtensions
         ${qt_loc}/include/QtCore/${qt_version}
         ${qt_loc}/include/QtGui/${qt_version}
         ${qt_loc}/include/QtCore/${qt_version}/QtCore
@@ -138,6 +140,8 @@ else()
         QT_NETWORK_LIB
         QT_GUI_LIB
         QT_CORE_LIB
+        QT_OPENGL_LIB
+        QT_OPENGLEXTENSIONS_LIB
     )
 
     if (Qt5DBus_FOUND)
@@ -192,6 +196,9 @@ else()
         lib/${qt_lib_prefix}Qt5Network
         lib/${qt_lib_prefix}Qt5Widgets
         lib/${qt_lib_prefix}Qt5Gui
+        lib/${qt_lib_prefix}Qt5OpenGL
+        lib/${qt_lib_prefix}Qt5OpenGLExtensions
+        lib/${qt_lib_prefix}Qt5VulkanSupport
         lib/${qt_lib_prefix}qtharfbuzz
         lib/${qt_lib_prefix}qtlibpng
     )
